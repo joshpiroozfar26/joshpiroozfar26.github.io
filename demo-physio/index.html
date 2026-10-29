@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coastline Physio &amp; Performance · Portwell, Dorset</title>
+<meta name="description" content="Physiotherapy, sports massage and personal training in Portwell, Dorset. Get back to doing what you love. Book a session online.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0e1416;--bg2:#151d20;--card:#1b2528;--lime:#c6f432;--lime2:#a9d61c;--txt:#eef3f1;--muted:#97a6a2;--line:#2a3639}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--txt);line-height:1.65;font-size:16.5px}
+img{display:block;max-width:100%}a{color:inherit}
+h1,h2,h3{font-family:"Space Grotesk",sans-serif;letter-spacing:-.03em;line-height:1.05}
+.wrap{width:min(1180px,92%);margin:auto}
+.demo{background:var(--lime);color:#0e1416;font-size:.78rem;text-align:center;padding:.4rem 1rem;font-weight:600}.demo a{color:#0e1416}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:78px}
+.logo{font-family:"Space Grotesk";font-weight:700;font-size:1.25rem;text-decoration:none;display:flex;align-items:center;gap:.6rem}
+.logo i{width:30px;height:30px;border-radius:50%;border:3px solid var(--lime);position:relative}.logo i::after{content:"";position:absolute;inset:6px;background:var(--lime);border-radius:50%}
+nav{display:flex;gap:2rem;align-items:center;font-size:.95rem;color:var(--muted)}
+nav a{text-decoration:none}nav a:hover{color:var(--txt)}
+.btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--lime);color:#0e1416;font-family:"Space Grotesk";font-weight:700;text-decoration:none;padding:.95rem 1.5rem;border-radius:4px;border:0;cursor:pointer;font-size:1rem;transition:.15s}
+.btn:hover{background:var(--lime2)}
+.btn-o{background:transparent;color:var(--txt);border:1.5px solid var(--line)}.btn-o:hover{background:var(--card)}
+nav .btn{padding:.6rem 1.1rem;color:#0e1416}
+.hero{padding:3rem 0 5rem}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
+.lbl{font-family:"Space Grotesk";color:var(--lime);font-weight:600;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase}
+h1{font-size:clamp(2.8rem,7vw,5.6rem);margin:1rem 0 1.4rem;font-weight:700}
+h1 span{color:var(--lime)}
+.hero p{color:var(--muted);font-size:1.15rem;max-width:33rem;margin-bottom:2rem}
+.hero .ctas{display:flex;gap:.8rem;flex-wrap:wrap}
+.hero-img{position:relative}
+.hero-img img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:6px;filter:grayscale(.2) contrast(1.05)}
+.hero-img .card{position:absolute;left:-2rem;bottom:2rem;background:var(--bg2);border:1px solid var(--line);border-radius:6px;padding:1rem 1.2rem;display:flex;gap:1rem;align-items:center}
+.hero-img .card b{font-family:"Space Grotesk";font-size:2rem;color:var(--lime)}
+.hero-img .card span{font-size:.85rem;color:var(--muted);line-height:1.3}
+.logos{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.logos .wrap{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;padding:1.4rem 0;flex-wrap:wrap;color:var(--muted);font-family:"Space Grotesk";font-size:.9rem}
+.logos em{font-style:normal;border:1.5px dashed var(--line);padding:.35rem .8rem;border-radius:4px}
+.sec{padding:6rem 0}
+.sh{display:flex;justify-content:space-between;align-items:end;gap:2rem;margin-bottom:3rem;flex-wrap:wrap}
+.sh h2{font-size:clamp(2.2rem,4.5vw,3.4rem);max-width:16ch}
+.sh p{color:var(--muted);max-width:26rem}
+.tr{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.tr article{background:var(--bg);padding:2.2rem;display:grid;grid-template-columns:auto 1fr auto;gap:1.4rem;align-items:start;transition:.2s}
+.tr article:hover{background:var(--bg2)}
+.tr .n{font-family:"Space Grotesk";color:var(--lime);font-weight:600}
+.tr h3{font-size:1.45rem;margin-bottom:.4rem}
+.tr p{color:var(--muted);font-size:.95rem}
+.tr .pr{font-family:"Space Grotesk";font-weight:700;white-space:nowrap;text-align:right}
+.tr .pr small{display:block;color:var(--muted);font-weight:400;font-size:.78rem}
+.bio{background:var(--bg2)}
+.bio .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:4.5rem;align-items:center}
+.bio img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:6px}
+.bio h2{font-size:clamp(2.2rem,4.5vw,3.2rem);margin:.6rem 0 1.2rem}
+.bio p{color:var(--muted)}.bio p+p{margin-top:1rem}
+.creds{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-top:1.8rem}
+.creds div{border:1px solid var(--line);border-radius:6px;padding:.9rem 1rem;font-size:.9rem}
+.creds b{display:block;font-family:"Space Grotesk";color:var(--lime);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.2rem}
+.bio .wrap.results{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-top:4rem;align-items:start}
+.results div{border-top:2px solid var(--lime);padding-top:1rem}
+.results b{font-family:"Space Grotesk";font-size:2.6rem;display:block;line-height:1}
+.results span{color:var(--muted);font-size:.9rem}
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.rev{background:var(--card);border-radius:6px;padding:1.8rem}
+.rev p{font-size:1.05rem;margin-bottom:1.2rem}.rev b{font-family:"Space Grotesk"}.rev span{display:block;color:var(--muted);font-size:.85rem}
+.rev .s{color:var(--lime);margin-bottom:.6rem}
+.note{color:var(--muted);font-size:.85rem;margin-top:1rem}
+.faq-w{display:grid;grid-template-columns:.8fr 1.2fr;gap:4rem}
+.faq-w h2{font-size:clamp(2.2rem,4.5vw,3.2rem)}
+details{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:1.4rem 0;font-family:"Space Grotesk";font-weight:600;font-size:1.15rem;display:flex;justify-content:space-between;gap:1rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--lime);font-size:1.5rem;line-height:1}
+details[open] summary::after{content:"−"}
+details p{color:var(--muted);padding-bottom:1.4rem;max-width:44rem}
+.book{background:var(--lime);color:#0e1416}
+.book .wrap{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.book h2{font-size:clamp(2.4rem,5vw,3.8rem)}
+.book p{margin:1rem 0;font-size:1.05rem}
+.book ul{list-style:none;display:grid;gap:.4rem;font-weight:500}
+form{background:var(--bg);color:var(--txt);border-radius:6px;padding:2rem;display:grid;gap:1rem}
+label{display:grid;gap:.35rem;font-size:.82rem;color:var(--muted);font-weight:500}
+input,select,textarea{font:inherit;color:var(--txt);background:var(--card);border:1px solid var(--line);border-radius:4px;padding:.8rem .9rem;width:100%}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--lime)}
+input[type=date]{color-scheme:dark}
+.r2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.thanks{text-align:center;padding:1.5rem 0}.thanks .ok{width:60px;height:60px;border-radius:50%;background:var(--lime);color:#0e1416;font-size:1.8rem;display:grid;place-items:center;margin:0 auto 1rem}.thanks h3{font-size:1.8rem}.thanks p,.thanks small{color:var(--muted)}
+footer{padding:2.5rem 0;color:var(--muted);font-size:.88rem}
+footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}footer a{color:var(--lime)}
+@media(max-width:960px){.hero .wrap,.bio .wrap,.faq-w,.book .wrap{grid-template-columns:1fr;gap:3rem}.tr{grid-template-columns:1fr}.revs{grid-template-columns:1fr}.bio .wrap.results{grid-template-columns:1fr 1fr;gap:1.2rem}.hero-img{max-width:480px}.hero-img .card{left:1rem}}
+@media(max-width:640px){nav a:not(.btn){display:none}nav .btn{white-space:nowrap;padding:.55rem .9rem;font-size:.9rem}.sec{padding:4.5rem 0}.tr article{grid-template-columns:1fr;gap:.6rem;padding:1.6rem}.tr .pr{text-align:left}.creds,.r2{grid-template-columns:1fr}.hero{padding:2rem 0 4rem}.hero .ctas .btn{flex:1 1 100%;justify-content:center}form{padding:1.4rem}.logos .wrap{justify-content:center}}
+</style>
+</head>
+<body>
+<div class="demo">Demo website: Coastline Physio &amp; Performance is a fictional business. Portfolio sample built by <a href="../">Fresh Starts</a>.</div>
+<header><div class="wrap"><a href="#" class="logo"><i></i><span>coastline<span style="color:var(--lime)">.</span>physio</span></a>
+<nav><a href="#treatments">Treatments</a><a href="#about">About</a><a href="#faq">FAQs</a><a href="#book" class="btn">Book a session</a></nav></div></header>
+
+<section class="hero"><div class="wrap">
+  <div><span class="lbl">Physio · Sports massage · Personal training</span>
+    <h1>Move better.<br>Hurt <span>less.</span><br>Get back out there.</h1>
+    <p>Evidence-based physiotherapy and strength coaching in Portwell. Whether it's a bad back, a running injury or rebuilding after surgery, we'll get you moving with a clear plan.</p>
+    <div class="ctas"><a href="#book" class="btn">Book an assessment →</a><a href="#treatments" class="btn btn-o">See treatments</a></div></div>
+  <div class="hero-img"><img src="https://images.unsplash.com/photo-1597452485669-2c7bb5fef90d?w=900&q=70&auto=format&fit=crop" alt="Client doing a strength exercise">
+    <div class="card"><b>94%</b><span>of clients hit their<br>rehab goals*</span></div></div>
+</div></section>
+
+<div class="logos"><div class="wrap"><span>Registered &amp; insured:</span><em>HCPC (placeholder)</em><em>CSP member (placeholder)</em><em>Insurer logos accepted</em><em>REPs Level 4 (placeholder)</em></div></div>
+
+<section class="sec" id="treatments"><div class="wrap">
+  <div class="sh"><h2>Treatments built around you</h2><p>Every plan starts with a thorough assessment. No endless sessions, just what you need to get better.</p></div>
+  <div class="tr">
+    <article><span class="n">01</span><div><h3>Initial assessment</h3><p>60 minutes to find the cause, not just the symptom, with hands-on treatment and a home plan.</p></div><span class="pr">£65<small>60 min</small></span></article>
+    <article><span class="n">02</span><div><h3>Physio follow-up</h3><p>Manual therapy, progress checks and exercise progression to keep you on track.</p></div><span class="pr">£50<small>45 min</small></span></article>
+    <article><span class="n">03</span><div><h3>Sports massage</h3><p>Deep tissue work for tight muscles, recovery after events and training blocks.</p></div><span class="pr">£45<small>45 min</small></span></article>
+    <article><span class="n">04</span><div><h3>Personal training</h3><p>One-to-one strength coaching in our private studio. Ideal after injury or for getting started safely.</p></div><span class="pr">£40<small>per session</small></span></article>
+    <article><span class="n">05</span><div><h3>Running clinic</h3><p>Video gait analysis and a strength plan to stop niggles coming back.</p></div><span class="pr">£75<small>75 min</small></span></article>
+    <article><span class="n">06</span><div><h3>Rehab packages</h3><p>6-week blocks combining physio and coached gym sessions for post-op and long-term issues.</p></div><span class="pr">£260<small>6 weeks</small></span></article>
+  </div>
+</div></section>
+
+<section class="sec bio" id="about"><div class="wrap">
+  <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&q=70&auto=format&fit=crop" alt="Portrait of practitioner Kate Lowell" loading="lazy">
+  <div><span class="lbl">Meet your physio</span><h2>Kate Lowell, MSc MCSP</h2>
+    <p>Kate spent eight years in NHS musculoskeletal outpatients and three seasons with a semi-pro rugby club before opening Coastline in 2021. She now works with everyone from office workers with stiff necks to ultramarathon runners.</p>
+    <p>"I want people to leave understanding their body, with exercises that actually fit into their life. Not a drawer full of printouts they never look at."</p>
+    <div class="creds"><div><b>Education</b>MSc Physiotherapy (placeholder)</div><div><b>Specialisms</b>Running, back pain, post-op knee</div><div><b>Registered</b>HCPC no. PH000000 (placeholder)</div><div><b>Also offers</b>Strength &amp; conditioning coaching</div></div>
+  </div>
+</div>
+<div class="wrap results"><div><b>1,200+</b><span>Sessions delivered</span></div><div><b>48h</b><span>Typical wait for a first appointment</span></div><div><b>4.9★</b><span>Sample client rating</span></div><div><b>3–6</b><span>Average sessions needed</span></div></div>
+</section>
+
+<section class="sec"><div class="wrap">
+  <div class="sh"><h2>Real results</h2><p>Sample reviews for demonstration purposes. *Illustrative figures.</p></div>
+  <div class="revs">
+    <div class="rev"><div class="s">★★★★★</div><p>"Two years of knee pain sorted in five sessions. Kate explained everything and I'm running again pain-free."</p><b>James R.</b><span>Trail runner · Portwell</span></div>
+    <div class="rev"><div class="s">★★★★★</div><p>"After my hip replacement the rehab package was brilliant. I'm stronger now than before the op."</p><b>Margaret H.</b><span>Retired teacher · Wareminster</span></div>
+    <div class="rev"><div class="s">★★★★★</div><p>"Desk job back pain gone. The PT sessions gave me the confidence to actually start lifting properly."</p><b>Sam O.</b><span>Software developer · Kingsmere</span></div>
+  </div>
+</div></section>
+
+<section class="sec" id="faq" style="padding-top:0"><div class="wrap faq-w">
+  <div><span class="lbl">FAQs</span><h2 style="margin-top:.6rem">Good to know</h2></div>
+  <div>
+    <details open><summary>Do I need a GP referral?</summary><p>No. You can book directly with us. If we think you need a scan or to see a specialist, we'll tell you and write to your GP.</p></details>
+    <details><summary>Can I claim on health insurance?</summary><p>We're recognised by most major UK health insurers. Bring your authorisation code to your first session and we'll invoice them directly where possible.</p></details>
+    <details><summary>What should I wear?</summary><p>Something comfortable you can move in, like shorts and a vest top. We may need to see the area we're treating.</p></details>
+    <details><summary>How many sessions will I need?</summary><p>Most people need between three and six. We'll give you an honest estimate after your assessment and never book sessions you don't need.</p></details>
+    <details><summary>What's your cancellation policy?</summary><p>Please give us 24 hours' notice to cancel or move an appointment. Late cancellations are charged at 50%.</p></details>
+  </div>
+</div></section>
+
+<section class="sec book" id="book"><div class="wrap">
+  <div><h2>Book your session</h2><p>Appointments usually available within 48 hours, including early mornings and evenings.</p>
+    <ul><li>📍 Studio 2, Quayside Works, Portwell (fictional)</li><li>📞 01305 000 222</li><li>🕘 Mon–Fri 7am–8pm · Sat 8am–1pm</li><li>🅿️ Free parking on site</li></ul></div>
+  <form data-demo data-thanks="Your session request is in. We'll confirm your appointment by email within a few hours.">
+    <div class="r2"><label>Full name<input required placeholder="Your name"></label><label>Email<input required type="email" placeholder="you@example.com"></label></div>
+    <div class="r2"><label>Session type<select required><option value="">Choose…</option><option>Initial assessment (£65)</option><option>Physio follow-up (£50)</option><option>Sports massage (£45)</option><option>Personal training (£40)</option><option>Running clinic (£75)</option></select></label><label>Preferred date<input type="date" required></label></div>
+    <label>What's bothering you?<textarea rows="3" placeholder="Briefly describe your injury or goal"></textarea></label>
+    <button class="btn" type="submit">Request session →</button>
+  </form>
+</div></section>
+
+<footer><div class="wrap"><span>© 2026 Coastline Physio &amp; Performance (fictional business). Photos: Unsplash.</span><span>Website built by <a href="../">Fresh Starts</a></span></div></footer>
+<script src="../demo-common.js"></script>
+</body>
+</html>

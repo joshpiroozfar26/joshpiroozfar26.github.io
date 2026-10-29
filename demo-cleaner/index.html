@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sparkle &amp; Sage Cleaning · Brankwood &amp; Poole Bay area</title>
+<meta name="description" content="Eco-friendly domestic and end-of-tenancy cleaning in Brankwood, Dorset. Get an instant quote online.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--sage:#2f7d6d;--sage2:#24614f;--mint:#d9f2ea;--mint2:#eef9f5;--lilac:#7b6cf6;--ink:#122620;--muted:#5d726b;--line:#dbe7e2}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Manrope,system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6;font-size:16.5px}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{width:min(1140px,92%);margin:auto}
+.demo{background:var(--sage2);color:#d9f2ea;font-size:.78rem;text-align:center;padding:.4rem 1rem}.demo a{color:#fff}
+header{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:20}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:70px}
+.logo{display:flex;align-items:center;gap:.55rem;font-weight:800;font-size:1.15rem;text-decoration:none}
+.logo b{color:var(--sage)}
+nav{display:flex;gap:1.6rem;align-items:center;font-weight:600;font-size:.95rem;color:var(--muted)}
+nav a{text-decoration:none}nav a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--sage);color:#fff;font:inherit;font-weight:700;text-decoration:none;padding:.85rem 1.4rem;border-radius:10px;border:0;cursor:pointer;transition:.15s}
+.btn:hover{background:var(--sage2)}
+.btn-l{background:var(--lilac)}.btn-l:hover{background:#6252e6}
+nav .btn{color:#fff;padding:.6rem 1.1rem}
+.hero{background:radial-gradient(800px 400px at 15% 0%,var(--mint),transparent 70%),var(--mint2);padding:4.5rem 0 0;text-align:center;overflow:hidden}
+.chip{display:inline-flex;gap:.4rem;align-items:center;background:#fff;border:1px solid var(--line);border-radius:999px;padding:.35rem .9rem;font-weight:700;font-size:.85rem;color:var(--sage2)}
+.hero h1{font-size:clamp(2.4rem,5.5vw,4.2rem);font-weight:800;letter-spacing:-.04em;line-height:1.05;max-width:16ch;margin:1.1rem auto 1rem}
+.hero h1 span{color:var(--sage)}
+.hero p{color:var(--muted);font-size:1.15rem;max-width:36rem;margin:0 auto 2rem}
+.hero .ctas{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}
+.strip{display:grid;grid-template-columns:1fr 1.3fr 1fr;gap:1rem;margin-top:3.5rem;align-items:end}
+.strip img{width:100%;height:260px;object-fit:cover;border-radius:22px 22px 0 0}
+.strip img:nth-child(2){height:320px}
+.trust{display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap;padding:1.6rem 0;font-weight:700;color:var(--muted);font-size:.92rem;border-bottom:1px solid var(--line)}
+.sec{padding:5.5rem 0}.alt{background:var(--mint2)}
+.title{max-width:620px;margin:0 auto 3rem;text-align:center}
+.title .k{color:var(--lilac);font-weight:800;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}
+.title h2{font-size:clamp(1.9rem,3.6vw,2.7rem);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin:.4rem 0 .5rem}
+.title p{color:var(--muted)}
+.pk{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.pk article{border:1px solid var(--line);border-radius:20px;padding:2rem;display:flex;flex-direction:column;background:#fff}
+.pk .ic{font-size:2rem;width:60px;height:60px;border-radius:16px;background:var(--mint);display:grid;place-items:center;margin-bottom:1rem}
+.pk h3{font-size:1.3rem;font-weight:800}
+.pk .pr{font-size:1rem;color:var(--muted);margin:.4rem 0 1rem}.pk .pr b{font-size:1.8rem;color:var(--ink)}
+.pk ul{list-style:none;display:grid;gap:.45rem;flex:1;margin-bottom:1.4rem;font-size:.95rem}
+.pk li::before{content:"✓";color:var(--sage);font-weight:800;margin-right:.5rem}
+.pk .feat{border:2px solid var(--sage);box-shadow:0 20px 40px rgba(47,125,109,.12)}
+.quote{display:grid;grid-template-columns:1.2fr .8fr;gap:0;border-radius:24px;overflow:hidden;box-shadow:0 30px 60px rgba(18,38,32,.1);border:1px solid var(--line)}
+.q-l{background:#fff;padding:2.4rem}
+.q-r{background:var(--sage2);color:#fff;padding:2.4rem;display:flex;flex-direction:column;justify-content:center}
+.q-l h3{font-size:1.1rem;font-weight:800;margin-bottom:.6rem}
+.opts{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin-bottom:1.6rem}
+.opts label{cursor:pointer}
+.opts input{position:absolute;opacity:0}
+.opts span{display:block;border:2px solid var(--line);border-radius:12px;padding:.8rem;text-align:center;font-weight:700;font-size:.9rem;transition:.15s}
+.opts input:checked+span{border-color:var(--sage);background:var(--mint);color:var(--sage2)}
+.steps{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.6rem}
+.stepper{display:flex;align-items:center;justify-content:space-between;border:2px solid var(--line);border-radius:12px;padding:.5rem .6rem .5rem 1rem;font-weight:700}
+.stepper button{width:34px;height:34px;border-radius:8px;border:0;background:var(--mint);font-size:1.2rem;font-weight:800;cursor:pointer;color:var(--sage2)}
+.stepper output{min-width:1.6rem;text-align:center;font-size:1.1rem}
+.stepper div{display:flex;align-items:center;gap:.5rem}
+.extras{display:grid;grid-template-columns:1fr 1fr;gap:.5rem}
+.extras label{display:flex;gap:.6rem;align-items:center;font-weight:600;font-size:.93rem;border:1px solid var(--line);border-radius:10px;padding:.6rem .8rem;cursor:pointer}
+.extras input{accent-color:var(--sage);width:18px;height:18px}
+.q-r .lbl{opacity:.8;font-weight:600}
+.q-r .price{font-size:3.6rem;font-weight:800;letter-spacing:-.04em;line-height:1;margin:.4rem 0}
+.q-r .sub{opacity:.85;font-size:.92rem;margin-bottom:1.6rem}
+.q-r .btn{background:#fff;color:var(--sage2)}.q-r .btn:hover{background:var(--mint)}
+.q-r small{opacity:.7;margin-top:1rem;display:block;font-size:.78rem}
+.tabs{display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap;margin-bottom:2rem}
+.tabs button{font:inherit;font-weight:700;border:2px solid var(--line);background:#fff;border-radius:999px;padding:.55rem 1.2rem;cursor:pointer}
+.tabs button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.check{display:grid;grid-template-columns:.9fr 1.1fr;gap:3rem;align-items:center}
+.check img{border-radius:22px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.panel{display:none}.panel.on{display:block}
+.panel h3{font-size:1.5rem;font-weight:800;margin-bottom:1rem}
+.panel ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
+.panel li{display:flex;gap:.6rem;align-items:flex-start;font-weight:600}
+.panel li::before{content:"✓";flex:none;width:22px;height:22px;border-radius:6px;background:var(--sage);color:#fff;display:grid;place-items:center;font-size:.75rem}
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.rev{border:1px solid var(--line);border-radius:18px;padding:1.6rem;background:#fff}
+.rev .s{color:#f5a524}.rev p{margin:.6rem 0 1rem}.rev b{display:block}.rev span{color:var(--muted);font-size:.85rem}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+.contact h2{font-size:clamp(1.9rem,3.6vw,2.6rem);font-weight:800;letter-spacing:-.03em;line-height:1.1}
+.contact p{color:var(--muted);margin:1rem 0}
+form{display:grid;gap:.9rem;background:#fff;border:1px solid var(--line);border-radius:20px;padding:2rem}
+form label{display:grid;gap:.3rem;font-weight:700;font-size:.88rem}
+form input,form select,form textarea{font:inherit;padding:.75rem .9rem;border:1.5px solid var(--line);border-radius:10px;width:100%;background:var(--mint2)}
+form input:focus,form select:focus,form textarea:focus{outline:none;border-color:var(--sage);background:#fff}
+.r2{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+.thanks{text-align:center;padding:1.5rem 0}.thanks .ok{width:60px;height:60px;border-radius:50%;background:var(--sage);color:#fff;font-size:1.8rem;display:grid;place-items:center;margin:0 auto 1rem}.thanks p,.thanks small{color:var(--muted)}
+footer{background:var(--ink);color:#a9bdb6;padding:2.5rem 0;font-size:.88rem}
+footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+footer a{color:#fff}
+@media(max-width:960px){.pk,.revs{grid-template-columns:1fr;max-width:520px;margin-inline:auto}.quote,.check,.contact{grid-template-columns:1fr}}
+@media(max-width:640px){nav a:not(.btn){display:none}.strip{grid-template-columns:1fr 1fr}.strip img:nth-child(3){display:none}.strip img{height:180px!important}.opts{grid-template-columns:1fr}.steps,.extras,.panel ul,.r2{grid-template-columns:1fr}.q-l,.q-r{padding:1.6rem}.sec{padding:4rem 0}.trust{gap:.6rem 1.4rem}form{padding:1.4rem}}
+</style>
+</head>
+<body>
+<div class="demo">Demo website: Sparkle &amp; Sage is a fictional business. Portfolio sample built by <a href="../">Fresh Starts</a>.</div>
+<header><div class="wrap"><a href="#" class="logo"><svg width="34" height="34" viewBox="0 0 34 34"><rect width="34" height="34" rx="10" fill="#2f7d6d"/><path d="M17 6l2.6 7.4L27 16l-7.4 2.6L17 26l-2.6-7.4L7 16l7.4-2.6z" fill="#d9f2ea"/></svg><span>Sparkle <b>&amp;</b> Sage</span></a>
+<nav><a href="#packages">Packages</a><a href="#quote">Instant quote</a><a href="#checklist">Checklist</a><a href="#contact" class="btn">Book a clean</a></nav></div></header>
+
+<section class="hero"><div class="wrap">
+  <span class="chip">🌿 Eco products · Fully insured · DBS-checked team</span>
+  <h1>Come home to a <span>spotless</span> house.</h1>
+  <p>Reliable home cleaning and deposit-back end-of-tenancy cleans across Brankwood and the Poole Bay area. Get a price in 30 seconds.</p>
+  <div class="ctas"><a href="#quote" class="btn">Get an instant quote</a><a href="#packages" class="btn btn-l">View packages</a></div>
+  <div class="strip">
+    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=700&q=70&auto=format&fit=crop" alt="Cleaner wiping a window">
+    <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=900&q=70&auto=format&fit=crop" alt="Bright clean living room">
+    <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=700&q=70&auto=format&fit=crop" alt="Clean modern kitchen">
+  </div>
+</div></section>
+<div class="trust wrap"><span>⭐ 4.9 sample rating</span><span>🔁 Same cleaner every visit</span><span>💷 48-hour re-clean guarantee</span><span>🔑 Key holding available</span></div>
+
+<section class="sec" id="packages"><div class="wrap">
+  <div class="title"><span class="k">Packages</span><h2>Cleaning that fits your life</h2><p>All products and equipment included. No contracts on regular cleans.</p></div>
+  <div class="pk">
+    <article><div class="ic">🏠</div><h3>Regular home clean</h3><div class="pr">from <b>£18</b>/hour</div><ul><li>Weekly or fortnightly</li><li>Same trusted cleaner</li><li>Kitchen, bathrooms, dusting, floors</li><li>Bed changes on request</li></ul><a href="#quote" class="btn">Get a price</a></article>
+    <article class="feat"><div class="ic">🔑</div><h3>End of tenancy</h3><div class="pr">from <b>£180</b> fixed</div><ul><li>Agent-approved checklist</li><li>Oven, fridge &amp; inside cupboards</li><li>Deposit-back guarantee</li><li>Free re-clean within 48 hours</li></ul><a href="#quote" class="btn">Get a price</a></article>
+    <article><div class="ic">✨</div><h3>Deep / spring clean</h3><div class="pr">from <b>£140</b> fixed</div><ul><li>Top-to-bottom one-off clean</li><li>Skirting, doors &amp; light switches</li><li>Limescale removal</li><li>Ideal before guests or after builders</li></ul><a href="#quote" class="btn">Get a price</a></article>
+  </div>
+</div></section>
+
+<section class="sec alt" id="quote"><div class="wrap">
+  <div class="title"><span class="k">Instant quote</span><h2>Your price in 30 seconds</h2><p>Choose your options and see an estimate update live.</p></div>
+  <div class="quote">
+    <div class="q-l">
+      <h3>1. Type of clean</h3>
+      <div class="opts">
+        <label><input type="radio" name="type" value="regular" checked><span>🏠 Regular</span></label>
+        <label><input type="radio" name="type" value="deep"><span>✨ Deep clean</span></label>
+        <label><input type="radio" name="type" value="eot"><span>🔑 End of tenancy</span></label>
+      </div>
+      <h3>2. Size of home</h3>
+      <div class="steps">
+        <div class="stepper">Bedrooms<div><button type="button" data-t="bed" data-d="-1" aria-label="Fewer bedrooms">−</button><output id="bed">2</output><button type="button" data-t="bed" data-d="1" aria-label="More bedrooms">+</button></div></div>
+        <div class="stepper">Bathrooms<div><button type="button" data-t="bath" data-d="-1" aria-label="Fewer bathrooms">−</button><output id="bath">1</output><button type="button" data-t="bath" data-d="1" aria-label="More bathrooms">+</button></div></div>
+      </div>
+      <h3>3. Extras</h3>
+      <div class="extras">
+        <label><input type="checkbox" value="45"> Oven deep clean (+£45)</label>
+        <label><input type="checkbox" value="20"> Inside fridge (+£20)</label>
+        <label><input type="checkbox" value="30"> Interior windows (+£30)</label>
+        <label><input type="checkbox" value="60"> Carpet clean (+£60)</label>
+      </div>
+    </div>
+    <div class="q-r">
+      <span class="lbl" id="q-lbl">Estimated price per visit</span>
+      <div class="price" id="q-price">£54</div>
+      <span class="sub" id="q-sub">About 3 hours · 1 cleaner</span>
+      <a href="#contact" class="btn" id="q-book">Book this clean →</a>
+      <small>Estimate only. Final price confirmed after a quick chat. Demo calculator for illustration.</small>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec" id="checklist"><div class="wrap">
+  <div class="title"><span class="k">What's included</span><h2>Our room-by-room checklist</h2></div>
+  <div class="tabs"><button class="on" data-p="k">Kitchen</button><button data-p="b">Bathrooms</button><button data-p="l">Living &amp; bedrooms</button><button data-p="e">End of tenancy extras</button></div>
+  <div class="check">
+    <img id="check-img" src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=900&q=70&auto=format&fit=crop" alt="Clean kitchen" loading="lazy">
+    <div>
+      <div class="panel on" id="p-k"><h3>Kitchen</h3><ul><li>Worktops &amp; splashbacks</li><li>Hob &amp; extractor hood</li><li>Sink &amp; taps descaled</li><li>Cupboard fronts &amp; handles</li><li>Microwave inside &amp; out</li><li>Appliance exteriors</li><li>Bins emptied &amp; wiped</li><li>Floors hoovered &amp; mopped</li></ul></div>
+      <div class="panel" id="p-b"><h3>Bathrooms</h3><ul><li>Toilet cleaned &amp; sanitised</li><li>Bath &amp; shower descaled</li><li>Tiles &amp; grout wiped</li><li>Mirrors polished</li><li>Sink, taps &amp; plugholes</li><li>Towels folded or changed</li><li>Bins emptied</li><li>Floors mopped</li></ul></div>
+      <div class="panel" id="p-l"><h3>Living rooms &amp; bedrooms</h3><ul><li>Dusting all reachable surfaces</li><li>Skirting boards</li><li>Mirrors &amp; glass</li><li>Beds made or changed</li><li>Sofas hoovered</li><li>Light switches &amp; door handles</li><li>Carpets hoovered</li><li>Hard floors mopped</li></ul></div>
+      <div class="panel" id="p-e"><h3>End of tenancy extras</h3><ul><li>Inside all cupboards &amp; drawers</li><li>Oven, hob &amp; racks degreased</li><li>Fridge &amp; freezer inside</li><li>Interior windows &amp; sills</li><li>Doors, frames &amp; radiators</li><li>Limescale removed throughout</li><li>Inventory-checklist ready</li><li>48-hour re-clean guarantee</li></ul></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec alt"><div class="wrap">
+  <div class="title"><span class="k">Reviews</span><h2>Spotless reputation</h2><p>Sample reviews for demonstration purposes.</p></div>
+  <div class="revs">
+    <div class="rev"><div class="s">★★★★★</div><p>"Got my full deposit back thanks to their end of tenancy clean. The letting agent said it was the cleanest handover they'd seen."</p><b>Chloe M.</b><span>Tenant, Brankwood</span></div>
+    <div class="rev"><div class="s">★★★★★</div><p>"Priya has cleaned for us fortnightly for a year. Reliable, thorough and lovely. Coming home on clean day is the best."</p><b>Owen &amp; Kate</b><span>Homeowners, Kingsmere</span></div>
+    <div class="rev"><div class="s">★★★★★</div><p>"Used them after our extension work. Dust everywhere, and they made it look brand new in a day."</p><b>Richard B.</b><span>Corfe Hollow</span></div>
+  </div>
+</div></section>
+
+<section class="sec" id="contact"><div class="wrap contact">
+  <div><span class="title" style="display:block;text-align:left;margin:0"><span class="k">Book a clean</span></span><h2>Ready for a sparkling home?</h2><p>Send us your details and we'll confirm your price and first available slot, usually the same day.</p>
+    <p>📞 01202 000 111<br>✉️ hello@sparkleandsage.example<br>🕘 Mon–Sat, 8am–6pm</p></div>
+  <form data-demo data-thanks="We've got your request and will be in touch today to confirm your clean.">
+    <div class="r2"><label>Name<input required placeholder="Your name"></label><label>Phone<input required type="tel" placeholder="07…"></label></div>
+    <div class="r2"><label>Postcode<input required placeholder="BH00"></label><label>Type of clean<select id="f-type"><option>Regular home clean</option><option>Deep clean</option><option>End of tenancy</option></select></label></div>
+    <label>Preferred start date<input type="date"></label>
+    <label>Anything else?<textarea rows="2" id="f-notes" placeholder="Pets, parking, access…"></textarea></label>
+    <button class="btn" type="submit">Request booking</button>
+  </form>
+</div></section>
+
+<footer><div class="wrap"><span>© 2026 Sparkle &amp; Sage Cleaning (fictional business). Photos: Unsplash.</span><span>Website built by <a href="../">Fresh Starts</a></span></div></footer>
+<script src="../demo-common.js"></script>
+<script>
+const st={bed:2,bath:1};
+const q=()=>{
+  const t=document.querySelector('input[name=type]:checked').value;
+  const extras=[...document.querySelectorAll('.extras input:checked')].reduce((a,c)=>a+ +c.value,0);
+  let price,sub,lbl;
+  if(t==='regular'){const hrs=Math.max(2,1.5+st.bed*.5+st.bath*.5);price=Math.round(hrs*18);sub=`About ${hrs} hours · 1 cleaner`;lbl='Estimated price per visit'}
+  else if(t==='deep'){price=110+st.bed*25+st.bath*20;sub='One-off top-to-bottom clean';lbl='Estimated one-off price'}
+  else{price=130+st.bed*35+st.bath*30;sub='Includes 48-hour re-clean guarantee';lbl='Estimated fixed price'}
+  price+=extras;
+  document.getElementById('q-price').textContent='£'+price;
+  document.getElementById('q-sub').textContent=sub+(extras?` · extras £${extras}`:'');
+  document.getElementById('q-lbl').textContent=lbl;
+  document.getElementById('f-type').selectedIndex={regular:0,deep:1,eot:2}[t];
+};
+document.querySelectorAll('.stepper button').forEach(b=>b.onclick=()=>{const k=b.dataset.t;st[k]=Math.min(k==='bed'?6:4,Math.max(k==='bed'?0:1,st[k]+ +b.dataset.d));document.getElementById(k).textContent=k==='bed'&&st[k]===0?'Studio':st[k];q()});
+document.querySelectorAll('.opts input,.extras input').forEach(i=>i.onchange=q);
+document.getElementById('q-book').onclick=()=>{const n=document.getElementById('f-notes');if(n)n.value=`Instant quote: ${document.getElementById('q-price').textContent} (${st.bed} bed, ${st.bath} bath)`};
+q();
+const imgs={k:'1556911220-bff31c812dba',b:'1584622650111-993a426fbf0a',l:'1600047509807-ba8f99d2cdde',e:'1581578731548-c64695cc6952'};
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tabs button,.panel').forEach(x=>x.classList.remove('on'));b.classList.add('on');document.getElementById('p-'+b.dataset.p).classList.add('on');document.getElementById('check-img').src=`https://images.unsplash.com/photo-${imgs[b.dataset.p]}?w=900&q=70&auto=format&fit=crop`});
+</script>
+</body>
+</html>

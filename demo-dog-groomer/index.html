@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Muddy Paw Parlour · Dog Grooming in Hardyford</title>
+<meta name="description" content="Friendly, fear-free dog grooming in Hardyford, Dorset. Baths, full grooms, puppy intros and nail trims. Book online.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#0f8b8d;--teal2:#0a6c6e;--sun:#ffc93c;--coral:#ff7a59;--ink:#17323a;--muted:#55707a;--bg:#fffaf0;--mint:#e3f4f1}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Nunito,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:17px}
+img{display:block;max-width:100%}a{color:inherit}
+h1,h2,h3{font-family:"Baloo 2",system-ui,sans-serif;line-height:1.05}
+.wrap{width:min(1140px,92%);margin:auto}
+.demo{background:var(--ink);color:#d7ebe9;font-size:.78rem;text-align:center;padding:.4rem 1rem}.demo a{color:#fff}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 0}
+.logo{display:flex;align-items:center;gap:.6rem;text-decoration:none;font-family:"Baloo 2";font-weight:800;font-size:1.45rem;color:var(--teal2)}
+.logo .paw{width:46px;height:46px;border-radius:50%;background:var(--sun);display:grid;place-items:center;font-size:1.5rem;transform:rotate(-12deg)}
+nav{display:flex;gap:1.6rem;align-items:center;font-weight:700}
+nav a{text-decoration:none}nav a:hover{color:var(--teal)}
+.btn{display:inline-block;background:var(--coral);color:#fff;text-decoration:none;font-weight:800;padding:.9rem 1.6rem;border-radius:999px;border:0;font:inherit;font-weight:800;cursor:pointer;box-shadow:0 5px 0 #d85a3b;transition:.15s}
+.btn:hover{transform:translateY(2px);box-shadow:0 3px 0 #d85a3b}
+.btn-teal{background:var(--teal);box-shadow:0 5px 0 var(--teal2)}.btn-teal:hover{box-shadow:0 3px 0 var(--teal2)}
+.hero{padding:2.5rem 0 5rem;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;align-items:center}
+.sticker{display:inline-block;background:var(--mint);color:var(--teal2);font-weight:800;padding:.35rem .9rem;border-radius:999px;font-size:.9rem;margin-bottom:1rem}
+h1{font-size:clamp(2.7rem,6vw,4.6rem);color:var(--ink)}
+h1 .u{color:var(--teal);position:relative;white-space:nowrap}
+h1 .u::after{content:"";position:absolute;left:0;right:0;bottom:.08em;height:.22em;background:var(--sun);z-index:-1;border-radius:4px}
+.hero p{font-size:1.15rem;color:var(--muted);margin:1.2rem 0 1.8rem;max-width:32rem}
+.hero .ctas{display:flex;gap:1rem;flex-wrap:wrap}
+.perks{display:flex;gap:1.2rem;flex-wrap:wrap;margin-top:1.8rem;font-weight:700;color:var(--teal2);font-size:.95rem}
+.blob{position:relative}
+.blob img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:58% 42% 52% 48% / 46% 54% 46% 54%;border:10px solid #fff;box-shadow:0 30px 60px rgba(23,50,58,.15)}
+.blob .bubble{position:absolute;background:#fff;border-radius:18px;padding:.8rem 1rem;box-shadow:0 12px 30px rgba(23,50,58,.15);font-weight:800;font-size:.92rem;display:flex;gap:.5rem;align-items:center}
+.blob .b1{left:-10px;bottom:12%}.blob .b2{right:-6px;top:8%;background:var(--sun)}
+.wave{display:block;width:100%;height:60px}
+.sec{padding:5.5rem 0}.mint{background:var(--mint)}
+.title{text-align:center;max-width:640px;margin:0 auto 3rem}
+.title h2{font-size:clamp(2.2rem,4.5vw,3.2rem)}
+.title p{color:var(--muted);margin-top:.5rem}
+.pk{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.pk article{background:#fff;border-radius:24px;padding:1.8rem 1.4rem;text-align:center;border:3px solid transparent;transition:.2s;display:flex;flex-direction:column}
+.pk article:hover{border-color:var(--teal);transform:translateY(-4px)}
+.pk .em{font-size:2.6rem}
+.pk h3{font-size:1.5rem;margin:.3rem 0}
+.pk .pr{font-family:"Baloo 2";font-size:2.4rem;color:var(--coral);font-weight:800}
+.pk .pr small{font-size:.9rem;color:var(--muted);font-family:Nunito}
+.pk ul{list-style:none;text-align:left;margin:1rem 0 0;display:grid;gap:.35rem;font-size:.93rem;flex:1}
+.pk li::before{content:"🐾 ";font-size:.8rem}
+.pk .pop{background:var(--teal);color:#fff}.pk .pop .pr,.pk .pop .pr small{color:var(--sun)}
+.size{display:flex;justify-content:center;gap:.5rem;margin-top:2rem;flex-wrap:wrap;font-weight:700;color:var(--muted);font-size:.92rem}
+.size span{background:#fff;padding:.4rem .9rem;border-radius:999px}
+.ba-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.ba{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:4/5;background:#ddd;box-shadow:0 14px 30px rgba(23,50,58,.12);user-select:none}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba .before{filter:grayscale(.55) contrast(.8) brightness(.85) blur(1px);clip-path:inset(0 50% 0 0)}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;z-index:3}
+.ba .line{position:absolute;top:0;bottom:0;left:50%;width:4px;background:#fff;z-index:2;transform:translateX(-50%)}
+.ba .line::after{content:"⇆";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:42px;height:42px;border-radius:50%;background:#fff;display:grid;place-items:center;font-weight:800;color:var(--teal)}
+.ba .lb{position:absolute;bottom:12px;z-index:2;background:rgba(23,50,58,.75);color:#fff;font-weight:800;font-size:.75rem;padding:.25rem .7rem;border-radius:999px}
+.ba .l{left:12px}.ba .r{right:12px;background:var(--teal)}
+.ba-cap{text-align:center;font-weight:800;margin-top:.7rem}
+.ba-note{text-align:center;color:var(--muted);font-size:.85rem;margin-top:1.4rem}
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;text-align:center}
+.how div{background:#fff;border-radius:24px;padding:2rem}
+.how .n{width:56px;height:56px;border-radius:50%;background:var(--sun);display:grid;place-items:center;margin:0 auto 1rem;font-family:"Baloo 2";font-weight:800;font-size:1.5rem}
+.how h3{font-size:1.4rem}.how p{color:var(--muted);font-size:.95rem}
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.rev{background:#fff;border-radius:22px;padding:1.6rem;position:relative}
+.rev .who{display:flex;align-items:center;gap:.7rem;margin-top:1rem;font-weight:800}
+.rev .who span{width:44px;height:44px;border-radius:50%;background:var(--mint);display:grid;place-items:center;font-size:1.4rem}
+.rev .s{color:#f5a524}
+.rev small{display:block;font-weight:600;color:var(--muted)}
+.book{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.book h2{font-size:clamp(2.2rem,4.5vw,3.2rem)}
+.book p{color:var(--muted);margin:1rem 0}
+.book ul{list-style:none;display:grid;gap:.4rem;font-weight:700}
+form{background:#fff;border-radius:28px;padding:2rem;display:grid;gap:.9rem;box-shadow:0 20px 50px rgba(23,50,58,.1);border:3px solid var(--sun)}
+label{display:grid;gap:.3rem;font-weight:800;font-size:.88rem}
+input,select,textarea{font:inherit;font-weight:600;padding:.75rem 1rem;border:2px solid #e6eceb;border-radius:14px;background:#fbfdfc;width:100%}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--teal)}
+.r2{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+.thanks{text-align:center;padding:1.5rem 0}.thanks .ok{font-size:0;width:70px;height:70px;border-radius:50%;background:var(--sun);margin:0 auto 1rem;display:grid;place-items:center}.thanks .ok::before{content:"🐶";font-size:2.2rem}.thanks h3{font-size:2rem}.thanks p,.thanks small{color:var(--muted)}
+footer{background:var(--teal2);color:#d4efec;padding:3rem 0 1.5rem;font-size:.92rem}
+footer .wrap>div{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1.5rem}
+footer .logo{color:#fff}footer a{color:#fff}
+footer .wrap>div.base{display:block;border-top:1px solid rgba(255,255,255,.2);margin-top:2rem;padding-top:1.2rem;font-size:.8rem}
+@media(max-width:960px){.hero .wrap,.book{grid-template-columns:1fr}.pk{grid-template-columns:1fr 1fr}.ba-wrap,.revs,.how{grid-template-columns:1fr}.ba-wrap{max-width:420px;margin:auto}.blob{max-width:460px;margin:auto}}
+@media(max-width:620px){nav a:not(.btn){display:none}nav .btn{padding:.55rem 1rem;white-space:nowrap;font-size:.9rem}.logo{font-size:1.05rem;line-height:1.1}.logo .paw{width:38px;height:38px;font-size:1.2rem;flex:none}.pk{grid-template-columns:1fr}.r2{grid-template-columns:1fr}.sec{padding:4rem 0}.hero .ctas .btn{flex:1 1 100%;text-align:center}form{padding:1.4rem}}
+</style>
+</head>
+<body>
+<div class="demo">Demo website: The Muddy Paw Parlour is a fictional business. Portfolio sample built by <a href="../">Fresh Starts</a>.</div>
+<header><div class="wrap"><a href="#" class="logo"><span class="paw">🐾</span>The Muddy Paw Parlour</a>
+<nav><a href="#packages">Packages</a><a href="#gallery">Before &amp; after</a><a href="#reviews">Reviews</a><a href="#book" class="btn">Book a groom</a></nav></div></header>
+
+<section class="hero"><div class="wrap">
+  <div><span class="sticker">🌿 Fear-free grooming in Hardyford</span>
+    <h1>From muddy walks to <span class="u">fluffy</span> again.</h1>
+    <p>Calm, one-dog-at-a-time grooming in a cosy countryside studio. No cages, no rushing, just lots of treats and a very handsome result.</p>
+    <div class="ctas"><a href="#book" class="btn">Book a groom</a><a href="#packages" class="btn btn-teal">See packages</a></div>
+    <div class="perks"><span>✔ One dog at a time</span><span>✔ Qualified &amp; insured</span><span>✔ Puppy specialists</span></div></div>
+  <div class="blob"><img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=900&q=70&auto=format&fit=crop" alt="Golden retriever being groomed">
+    <div class="bubble b1">⭐ 5.0 sample rating</div><div class="bubble b2">🛁 Gentle bath &amp; blow-dry</div></div>
+</div></section>
+
+<svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 30 Q 360 0 720 30 T 1440 30 V60 H0Z" fill="#e3f4f1"/></svg>
+<section class="sec mint" id="packages" style="padding-top:3rem"><div class="wrap">
+  <div class="title"><h2>Grooming packages</h2><p>Prices shown for small dogs. Medium +£10, large +£20, giant breeds on request.</p></div>
+  <div class="pk">
+    <article><div class="em">🐶</div><h3>Puppy Intro</h3><div class="pr">£25 <small>/ 45 min</small></div><ul><li>Gentle first bath</li><li>Face, feet &amp; bottom tidy</li><li>Nail trim</li><li>Lots of cuddles</li></ul></article>
+    <article><div class="em">🫧</div><h3>Bath &amp; Brush</h3><div class="pr">£35 <small>/ 1 hr</small></div><ul><li>Double shampoo</li><li>Conditioner</li><li>Blow-dry &amp; deshed</li><li>Nails &amp; ears</li></ul></article>
+    <article class="pop"><div class="em">✂️</div><h3>Full Groom</h3><div class="pr">£48 <small>/ 2 hrs</small></div><ul><li>Everything in Bath &amp; Brush</li><li>Full breed or teddy cut</li><li>Paw balm &amp; spritz</li><li>Bandana or bow</li></ul></article>
+    <article><div class="em">💅</div><h3>Pawdicure</h3><div class="pr">£12 <small>/ 15 min</small></div><ul><li>Nail clip &amp; file</li><li>Paw pad trim</li><li>Soothing paw balm</li><li>Walk-ins welcome</li></ul></article>
+  </div>
+  <div class="size"><span>Small: up to 10kg</span><span>Medium: 10–25kg</span><span>Large: 25kg+</span></div>
+</div></section>
+<svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" style="transform:rotate(180deg)"><path d="M0 30 Q 360 0 720 30 T 1440 30 V60 H0Z" fill="#e3f4f1"/></svg>
+
+<section class="sec" id="gallery" style="padding-top:3rem"><div class="wrap">
+  <div class="title"><h2>Before &amp; after</h2><p>Drag the slider to see the transformation.</p></div>
+  <div class="ba-wrap">
+    <div><div class="ba"><img class="after" src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=700&q=70&auto=format&fit=crop" alt="Collie after grooming" loading="lazy"><img class="before" src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=700&q=70&auto=format&fit=crop" alt="" loading="lazy"><div class="line"></div><span class="lb l">Before</span><span class="lb r">After</span><input type="range" min="0" max="100" value="50" aria-label="Before and after slider"></div><p class="ba-cap">Bramble · Full Groom</p></div>
+    <div><div class="ba"><img class="after" src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=700&q=70&auto=format&fit=crop" alt="Two small dogs after grooming" loading="lazy"><img class="before" src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=700&q=70&auto=format&fit=crop" alt="" loading="lazy"><div class="line"></div><span class="lb l">Before</span><span class="lb r">After</span><input type="range" min="0" max="100" value="50" aria-label="Before and after slider"></div><p class="ba-cap">Pip &amp; Biscuit · Bath &amp; Brush</p></div>
+    <div><div class="ba"><img class="after" src="https://images.unsplash.com/photo-1477884213360-7e9d7dcc1e48?w=700&q=70&auto=format&fit=crop" alt="Pug after grooming" loading="lazy"><img class="before" src="https://images.unsplash.com/photo-1477884213360-7e9d7dcc1e48?w=700&q=70&auto=format&fit=crop" alt="" loading="lazy"><div class="line"></div><span class="lb l">Before</span><span class="lb r">After</span><input type="range" min="0" max="100" value="50" aria-label="Before and after slider"></div><p class="ba-cap">Winston · Puppy Intro</p></div>
+  </div>
+  <p class="ba-note">Placeholder photos for this demo. A real site would use the groomer's own before and after shots.</p>
+</div></section>
+
+<section class="sec mint"><div class="wrap">
+  <div class="title"><h2>How a visit works</h2></div>
+  <div class="how"><div><div class="n">1</div><h3>Book online</h3><p>Pick a package and a day. We'll text to confirm and ask about your dog's quirks.</p></div><div><div class="n">2</div><h3>Pamper time</h3><p>Your dog gets our full attention, plenty of breaks and a few too many treats.</p></div><div><div class="n">3</div><h3>Photo &amp; pick-up</h3><p>We send you a photo when they're ready. Expect a very proud, very fluffy pup.</p></div></div>
+</div></section>
+
+<section class="sec" id="reviews"><div class="wrap">
+  <div class="title"><h2>Happy dogs, happy humans</h2><p>Sample reviews for demonstration purposes.</p></div>
+  <div class="revs">
+    <div class="rev"><div class="s">★★★★★</div><p>"Our nervous rescue usually shakes at the groomers. Here she trotted in wagging her tail. Can't recommend enough."</p><div class="who"><span>🐕</span><div>Laura &amp; Maple<small>Hardyford</small></div></div></div>
+    <div class="rev"><div class="s">★★★★★</div><p>"Best teddy cut our cockapoo has ever had, and the photo when he was ready made my day."</p><div class="who"><span>🐩</span><div>Dev &amp; Murphy<small>Shillingcombe</small></div></div></div>
+    <div class="rev"><div class="s">★★★★★</div><p>"Easy online booking, fair prices and our spaniel came home smelling amazing. Booked his next one already!"</p><div class="who"><span>🦮</span><div>Anne &amp; Barney<small>Puddlestone</small></div></div></div>
+  </div>
+</div></section>
+
+<section class="sec mint" id="book"><div class="wrap book">
+  <div><h2>Book your dog's pamper day</h2><p>Tell us about your dog and when suits you. We'll confirm by text within a few hours.</p>
+    <ul><li>📍 The Old Dairy, Mill Lane, Hardyford (fictional)</li><li>📞 01258 000 000</li><li>🕘 Tue–Sat, 8:30am–5pm</li></ul></div>
+  <form data-demo data-thanks="Your booking request is in. We'll text you to confirm. Tail wags all round!">
+    <div class="r2"><label>Your name<input required placeholder="Your name"></label><label>Mobile<input required type="tel" placeholder="07…"></label></div>
+    <div class="r2"><label>Dog's name<input required placeholder="e.g. Bramble"></label><label>Breed<input placeholder="e.g. Cockapoo"></label></div>
+    <div class="r2"><label>Size<select required><option value="">Choose size</option><option>Small (up to 10kg)</option><option>Medium (10–25kg)</option><option>Large (25kg+)</option></select></label><label>Package<select required><option value="">Choose package</option><option>Puppy Intro</option><option>Bath &amp; Brush</option><option>Full Groom</option><option>Pawdicure</option></select></label></div>
+    <label>Preferred date<input type="date" required></label>
+    <button class="btn" type="submit">Request booking 🐾</button>
+  </form>
+</div></section>
+
+<footer><div class="wrap"><div><a href="#" class="logo">🐾 The Muddy Paw Parlour</a><p>The Old Dairy, Mill Lane, Hardyford · 01258 000 000</p></div>
+<div class="base">© 2026 The Muddy Paw Parlour (fictional business). Photos: Unsplash. Website built by <a href="../">Fresh Starts</a>.</div></div></footer>
+<script src="../demo-common.js"></script>
+<script>
+document.querySelectorAll('.ba').forEach(b=>{const r=b.querySelector('input'),bf=b.querySelector('.before'),l=b.querySelector('.line');
+r.addEventListener('input',()=>{bf.style.clipPath=`inset(0 ${100-r.value}% 0 0)`;l.style.left=r.value+'%'});});
+</script>
+</body>
+</html>

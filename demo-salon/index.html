@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saltwater Hair &amp; Beauty · Chesilcombe</title>
+<meta name="description" content="Relaxed seaside hair and beauty salon in Chesilcombe, Dorset. Cuts, colour, balayage, brows and nails. Book online.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--blush:#f6e8e3;--blush2:#ecd3cb;--rose:#b5726a;--sage:#8a9a84;--ink:#2e2624;--muted:#7d706c;--cream:#fdf9f7}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Jost,system-ui,sans-serif;font-weight:300;color:var(--ink);background:var(--cream);line-height:1.75;font-size:17px}
+img{display:block;max-width:100%}a{color:inherit}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.1}
+.wrap{width:min(1160px,90%);margin:auto}
+.demo{background:var(--ink);color:#e9dcd7;font-size:.78rem;text-align:center;padding:.4rem 1rem;letter-spacing:.03em}.demo a{color:#fff}
+header{position:absolute;left:0;right:0;z-index:10;color:#fff}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding:1.6rem 0}
+.logo{font-family:"Cormorant Garamond",serif;font-size:1.7rem;text-decoration:none;letter-spacing:.04em;line-height:1}
+.logo small{display:block;font-family:Jost;font-size:.62rem;letter-spacing:.35em;text-transform:uppercase;margin-top:.3rem}
+nav{display:flex;gap:2.2rem;align-items:center;font-size:.85rem;letter-spacing:.18em;text-transform:uppercase}
+nav a{text-decoration:none;opacity:.9}nav a:hover{opacity:1}
+.btn{display:inline-block;font-family:Jost;font-size:.82rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;padding:1rem 2.1rem;border:1px solid currentColor;transition:.25s;background:none;cursor:pointer;color:inherit;font-weight:400}
+.btn:hover{background:#fff;color:var(--ink)}
+.btn-fill{background:var(--rose);border-color:var(--rose);color:#fff}.btn-fill:hover{background:var(--ink);border-color:var(--ink);color:#fff}
+.hero{min-height:92vh;display:grid;place-items:center;text-align:center;color:#fff;background:linear-gradient(rgba(46,38,36,.45),rgba(46,38,36,.55)),url("https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1800&q=70&auto=format&fit=crop") center/cover}
+.hero .in{max-width:760px;padding:7rem 1.2rem 4rem}
+.hero .pre{letter-spacing:.4em;text-transform:uppercase;font-size:.78rem}
+.hero h1{font-size:clamp(3rem,8vw,6rem);font-style:italic;margin:.8rem 0 1rem}
+.hero p{font-size:1.15rem;max-width:34rem;margin:0 auto 2.2rem}
+.hero .ctas{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.sec{padding:6.5rem 0}
+.title{text-align:center;margin-bottom:3.5rem}
+.title .pre{color:var(--rose);letter-spacing:.35em;text-transform:uppercase;font-size:.75rem}
+.title h2{font-size:clamp(2.4rem,5vw,3.6rem);margin-top:.4rem}
+.title p{color:var(--muted);max-width:520px;margin:.6rem auto 0}
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.intro .imgs{position:relative;padding:0 3rem 3rem 0}
+.intro .imgs img:first-child{aspect-ratio:4/5;object-fit:cover;width:100%}
+.intro .imgs img:last-child{position:absolute;right:0;bottom:0;width:48%;aspect-ratio:1;object-fit:cover;border:10px solid var(--cream)}
+.intro h2{font-size:clamp(2.2rem,4vw,3.2rem);margin-bottom:1.2rem}
+.intro p{color:var(--muted)}.intro p+p{margin-top:1rem}
+.sign{font-family:"Cormorant Garamond";font-style:italic;font-size:1.6rem;color:var(--rose);margin-top:1.4rem}
+.prices{background:var(--blush)}
+.plist{display:grid;grid-template-columns:1fr 1fr;gap:3rem 5rem}
+.plist h3{font-size:1.9rem;border-bottom:1px solid var(--blush2);padding-bottom:.6rem;margin-bottom:1rem;font-style:italic}
+.plist ul{list-style:none}
+.plist li{display:flex;align-items:baseline;gap:.6rem;padding:.42rem 0}
+.plist li .n{white-space:nowrap}
+.plist li .d{flex:1;border-bottom:1px dotted #c9aaa2;transform:translateY(-4px)}
+.plist li .p{font-weight:500;white-space:nowrap}
+.plist li small{display:block;color:var(--muted);font-size:.8rem}
+.pnote{text-align:center;color:var(--muted);font-size:.88rem;margin-top:3rem}
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5rem;text-align:center}
+.team img{width:220px;height:220px;border-radius:50%;object-fit:cover;margin:0 auto 1.4rem;border:6px solid var(--blush)}
+.team h3{font-size:1.8rem}.team .role{color:var(--rose);letter-spacing:.2em;text-transform:uppercase;font-size:.72rem}
+.team p{color:var(--muted);font-size:.95rem;margin-top:.6rem}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:12px}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:.4s;filter:saturate(.9)}
+.gallery img:hover{filter:saturate(1.1);transform:scale(1.02)}
+.gallery .tall{grid-row:span 2}.gallery .wide{grid-column:span 2}
+.quotes{background:var(--sage);color:#fff;text-align:center}
+.quotes .title .pre{color:#eef2ea}
+.qs{display:grid;grid-template-columns:repeat(3,1fr);gap:3rem}
+.qs blockquote{font-family:"Cormorant Garamond";font-style:italic;font-size:1.45rem;line-height:1.4}
+.qs cite{display:block;margin-top:1rem;font-style:normal;letter-spacing:.2em;text-transform:uppercase;font-size:.72rem}
+.book{display:grid;grid-template-columns:.9fr 1.1fr;gap:4rem;align-items:start}
+.book h2{font-size:clamp(2.4rem,5vw,3.4rem)}
+.book .info p{color:var(--muted);margin:1rem 0}
+.book table{width:100%;border-collapse:collapse;margin-top:1.5rem;font-size:.95rem}
+.book td{padding:.5rem 0;border-bottom:1px solid var(--blush2)}.book td:last-child{text-align:right}
+form{background:#fff;padding:2.5rem;box-shadow:0 30px 60px rgba(46,38,36,.08);display:grid;gap:1.1rem}
+label{display:grid;gap:.35rem;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+input,select,textarea{font:inherit;font-size:1rem;letter-spacing:0;text-transform:none;color:var(--ink);padding:.8rem 0;border:0;border-bottom:1px solid var(--blush2);background:transparent;width:100%;border-radius:0}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--rose)}
+.r2{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+form .btn{margin-top:.6rem}
+.thanks{text-align:center;padding:2rem 0}.thanks .ok{width:60px;height:60px;border-radius:50%;background:var(--blush);color:var(--rose);font-size:1.8rem;display:grid;place-items:center;margin:0 auto 1rem}.thanks h3{font-size:2rem}.thanks p,.thanks small{color:var(--muted)}
+footer{background:var(--ink);color:#cbbdb8;text-align:center;padding:3.5rem 0 2rem;font-size:.9rem}
+footer .logo{color:#fff;display:inline-block;margin-bottom:1rem}
+footer .soc{display:flex;justify-content:center;gap:1.6rem;margin:1rem 0 1.6rem;letter-spacing:.2em;text-transform:uppercase;font-size:.72rem}
+footer small{display:block;opacity:.7}footer a{color:#fff}
+@media(max-width:900px){.intro,.book{grid-template-columns:1fr;gap:3rem}.plist{grid-template-columns:1fr}.team,.qs{grid-template-columns:1fr;gap:3rem}.gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px}}
+@media(max-width:680px){nav a:not(.btn){display:none}nav .btn{padding:.7rem 1rem;font-size:.7rem;letter-spacing:.12em}.sec{padding:4.5rem 0}.hero{min-height:auto}.hero .in{padding:8rem 1.2rem 5rem}.r2{grid-template-columns:1fr}form{padding:1.6rem}.intro .imgs{padding:0 2rem 2rem 0}.team img{width:180px;height:180px}.logo{font-size:1.4rem}}
+</style>
+</head>
+<body>
+<div class="demo">Demo website: Saltwater Hair &amp; Beauty is a fictional business. Portfolio sample built by <a href="../">Fresh Starts</a>.</div>
+<header><div class="wrap"><a href="#" class="logo">Saltwater<small>Hair &amp; Beauty</small></a>
+<nav><a href="#prices">Prices</a><a href="#team">Stylists</a><a href="#gallery">Gallery</a><a href="#book" class="btn">Book now</a></nav></div></header>
+
+<section class="hero"><div class="in">
+  <div class="pre">Chesilcombe · Dorset coast</div>
+  <h1>Hair that feels like a sea breeze</h1>
+  <p>A calm, light-filled salon by the harbour for cuts, colour and little moments of treating yourself.</p>
+  <div class="ctas"><a href="#book" class="btn btn-fill">Book an appointment</a><a href="#prices" class="btn">View prices</a></div>
+</div></section>
+
+<section class="sec"><div class="wrap intro">
+  <div class="imgs"><img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=900&q=70&auto=format&fit=crop" alt="Stylist colouring hair" loading="lazy"><img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&q=70&auto=format&fit=crop" alt="Salon tools" loading="lazy"></div>
+  <div><div class="title" style="text-align:left;margin:0 0 1rem"><span class="pre">Welcome</span></div>
+    <h2>Slow beauty, by the sea</h2>
+    <p>Saltwater opened in a converted net loft on Chesilcombe harbour in 2017. We take our time: every appointment starts with a proper consultation and a good cup of tea.</p>
+    <p>We use vegan, cruelty-free colour, and our stylists train every season so you leave with something that suits you, not just what's trending.</p>
+    <div class="sign">Ellie &amp; the Saltwater team</div></div>
+</div></section>
+
+<section class="sec prices" id="prices"><div class="wrap">
+  <div class="title"><span class="pre">Price list</span><h2>Our menu</h2><p>Prices start from and vary by stylist level and hair length.</p></div>
+  <div class="plist">
+    <div><h3>Cut &amp; finish</h3><ul>
+      <li><span class="n">Restyle cut &amp; blow-dry</span><span class="d"></span><span class="p">£48</span></li>
+      <li><span class="n">Trim &amp; blow-dry</span><span class="d"></span><span class="p">£40</span></li>
+      <li><span class="n">Men's cut</span><span class="d"></span><span class="p">£24</span></li>
+      <li><span class="n">Children's cut (under 12)</span><span class="d"></span><span class="p">£16</span></li>
+      <li><span class="n">Blow-dry &amp; style</span><span class="d"></span><span class="p">£28</span></li>
+      <li><span class="n">Occasion &amp; bridal hair</span><span class="d"></span><span class="p">£65</span></li></ul></div>
+    <div><h3>Colour</h3><ul>
+      <li><span class="n">Full head colour</span><span class="d"></span><span class="p">£68</span></li>
+      <li><span class="n">Root tint</span><span class="d"></span><span class="p">£52</span></li>
+      <li><span class="n">Half head highlights</span><span class="d"></span><span class="p">£75</span></li>
+      <li><span class="n">Balayage / babylights</span><span class="d"></span><span class="p">£120</span></li>
+      <li><span class="n">Toner &amp; gloss</span><span class="d"></span><span class="p">£30</span></li>
+      <li><span class="n">Olaplex treatment</span><span class="d"></span><span class="p">£25</span></li></ul></div>
+    <div><h3>Beauty</h3><ul>
+      <li><span class="n">Brow shape &amp; tint</span><span class="d"></span><span class="p">£22</span></li>
+      <li><span class="n">Lash lift &amp; tint</span><span class="d"></span><span class="p">£45</span></li>
+      <li><span class="n">Gel manicure</span><span class="d"></span><span class="p">£30</span></li>
+      <li><span class="n">Signature facial (60 min)</span><span class="d"></span><span class="p">£58</span></li></ul></div>
+    <div><h3>Little extras</h3><ul>
+      <li><span class="n">Scalp massage add-on</span><span class="d"></span><span class="p">£10</span></li>
+      <li><span class="n">Fringe trim</span><span class="d"></span><span class="p">£6</span></li>
+      <li><span class="n">Gift vouchers</span><span class="d"></span><span class="p">any value</span></li>
+      <li><span class="n">Skin / patch test</span><span class="d"></span><span class="p">free</span></li></ul></div>
+  </div>
+  <p class="pnote">A patch test is required 48 hours before any colour or tint service.</p>
+</div></section>
+
+<section class="sec" id="team"><div class="wrap">
+  <div class="title"><span class="pre">Meet the team</span><h2>Our stylists</h2></div>
+  <div class="team">
+    <div><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&q=70&auto=format&fit=crop" alt="Stylist portrait" loading="lazy"><span class="role">Owner · Creative director</span><h3>Ellie</h3><p>Colour specialist with 14 years' experience. Lives for a soft, sun-kissed balayage.</p></div>
+    <div><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=70&auto=format&fit=crop" alt="Stylist portrait" loading="lazy"><span class="role">Senior stylist</span><h3>Marcus</h3><p>Precision cuts, short styles and men's grooming. Never rushes a fringe.</p></div>
+    <div><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=500&q=70&auto=format&fit=crop" alt="Stylist portrait" loading="lazy"><span class="role">Beauty therapist</span><h3>Aisha</h3><p>Brows, lashes and facials, plus the calmest hands in Dorset.</p></div>
+  </div>
+</div></section>
+
+<section class="sec" id="gallery" style="padding-top:0"><div class="wrap">
+  <div class="title"><span class="pre">@saltwater.salon</span><h2>Recent work</h2></div>
+  <div class="gallery">
+    <img class="tall" src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=70&auto=format&fit=crop" alt="Long wavy hair" loading="lazy">
+    <img class="wide" src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=900&q=70&auto=format&fit=crop" alt="Salon interior" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=500&q=70&auto=format&fit=crop" alt="Styling tools" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=500&q=70&auto=format&fit=crop" alt="Treatment" loading="lazy">
+    <img class="wide" src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=900&q=70&auto=format&fit=crop" alt="Colour session" loading="lazy">
+  </div>
+</div></section>
+
+<section class="sec quotes"><div class="wrap">
+  <div class="title"><span class="pre">Kind words · sample reviews</span><h2>Client love</h2></div>
+  <div class="qs">
+    <div><blockquote>"Ellie completely transformed my hair. I've never had so many compliments. Worth every penny."</blockquote><cite>Sophie · Chesilcombe</cite></div>
+    <div><blockquote>"The most relaxing salon I've ever been to. The head massage alone is worth the trip."</blockquote><cite>Rachel · Portwell</cite></div>
+    <div><blockquote>"Marcus actually listens. Best cut I've had in years, and they remembered how I take my coffee."</blockquote><cite>Tom · Wareminster</cite></div>
+  </div>
+</div></section>
+
+<section class="sec" id="book"><div class="wrap book">
+  <div class="info"><div class="title" style="text-align:left;margin:0"><span class="pre">Appointments</span></div><h2>Book your visit</h2>
+    <p>Choose a service and a time that suits you and we'll confirm by text. New clients receive 15% off their first colour.</p>
+    <p>📍 3 Harbour Steps, Chesilcombe, DT0 0XX (fictional)<br>📞 01305 000 000</p>
+    <table><tr><td>Tue – Wed</td><td>9:00 – 17:30</td></tr><tr><td>Thursday</td><td>9:00 – 20:00</td></tr><tr><td>Friday</td><td>9:00 – 18:00</td></tr><tr><td>Saturday</td><td>8:30 – 16:00</td></tr><tr><td>Sun – Mon</td><td>Closed</td></tr></table></div>
+  <form data-demo data-thanks="Your appointment request is in. We'll text you to confirm shortly.">
+    <div class="r2"><label>Name<input required placeholder="Your name"></label><label>Mobile<input required type="tel" placeholder="07…"></label></div>
+    <label>Service<select required><option value="">Choose a service</option><option>Cut &amp; blow-dry</option><option>Colour</option><option>Balayage</option><option>Brows &amp; lashes</option><option>Nails</option><option>Facial</option></select></label>
+    <div class="r2"><label>Stylist<select><option>No preference</option><option>Ellie</option><option>Marcus</option><option>Aisha</option></select></label><label>Preferred date<input required type="date"></label></div>
+    <label>Notes<textarea rows="2" placeholder="Inspiration, hair length, anything we should know"></textarea></label>
+    <button class="btn btn-fill" type="submit">Request appointment</button>
+  </form>
+</div></section>
+
+<footer><a href="#" class="logo">Saltwater<small>Hair &amp; Beauty</small></a>
+<p>3 Harbour Steps, Chesilcombe · 01305 000 000</p>
+<div class="soc"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">TikTok</a></div>
+<small>© 2026 Saltwater Hair &amp; Beauty (fictional business). Photos: Unsplash. Website built by <a href="../">Fresh Starts</a>.</small></footer>
+<script src="../demo-common.js"></script>
+</body>
+</html>
