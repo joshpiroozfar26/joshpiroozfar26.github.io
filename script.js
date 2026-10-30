@@ -1,5 +1,5 @@
 // ▼ Replace with your real email address before publishing
-const CONTACT_EMAIL = '[YOUR EMAIL]';
+const CONTACT_EMAIL = 'joshpiroozfar26@gmail.com';
 
 // Mobile nav
 const toggle = document.querySelector('.nav-toggle');
