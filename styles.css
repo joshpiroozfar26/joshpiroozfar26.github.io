@@ -197,3 +197,5 @@ h3{font-size:1.15rem;font-weight:700}
 @media (max-width:1080px){.pf-grid{grid-template-columns:repeat(3,1fr)}}
 @media (max-width:820px){.pf-grid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:520px){.pf-grid{grid-template-columns:1fr}}
+
+.book-btn{margin-top:1.4rem}
